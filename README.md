@@ -45,12 +45,12 @@ Once all car counts reach zero, a "DONE" message is sent to MATLAB, and the LCD 
 1. While updating car count:
 Car Counts:
 
-A2B 5, B2A 3
-C2D 2, D2C 1
+ A2B 5, B2A 3
+ C2D 2, D2C 1
 
 2. During Green Cycle:
 Green Path:
-C2D
+ C2D
 
 ## Technical Summary
 - Fixed green signal duration: 3 seconds
