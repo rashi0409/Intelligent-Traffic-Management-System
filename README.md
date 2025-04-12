@@ -61,7 +61,7 @@ Previous path is skipped during selection if alternatives exist
 Communication through USB UART
 Integrated with MATLAB for input/output
 
-# Requirements
+## Requirements
 PSoC or compatible microcontroller with:
 USBUART component
 2-line LCD display
