@@ -48,7 +48,7 @@ Car Counts:
 A2B 5, B2A 3
 C2D 2, D2C 1
 
-- During Green Cycle:
+2. During Green Cycle:
 Green Path:
 C2D
 
