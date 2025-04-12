@@ -1,8 +1,8 @@
-## Intelligent-Traffic-Management-System
-# Traffic Light System
+# Intelligent-Traffic-Management-System
+## Traffic Light System
 This project implements a simple, intelligent traffic light control system for managing four directional paths. It communicates with MATLAB via USB to receive real-time car counts and uses an LCD to display updates during the control cycle. The logic ensures fair path selection and avoids giving the green signal to the same path twice in a row unless necessary.
 
-# Project Overview:
+## Project Overview:
 The system controls traffic flow for four defined routes:
 A2B (Index 0)
 B2A (Index 1)
@@ -12,14 +12,14 @@ D2C (Index 3)
 Car counts for each path are sent from MATLAB in a line-by-line format. The microcontroller reads this input, updates internal counts, and uses a selection strategy to assign the green signal to the path with the highest number of waiting cars — with one condition: the same path is not allowed to be selected in consecutive cycles.
 After each green cycle (fixed to 3 seconds), the car count is updated, assuming up to 5 cars have moved through. The process repeats until no cars remain.
 
-# Features:
+## Features:
 USB UART communication with MATLAB.
 Real-time decision-making based on car density.
 Skips previously selected path for fairness.
 LCD output showing car counts and green-lighted direction.
 Cycle-based simulation with consistent updates and status messages.
 
-# How It Works
+## How It Works
 1. Receive Car Counts
  MATLAB sends strings like A2B,10 or D2C,5. Each line represents the number of cars waiting on a path.
 2. End of Input
@@ -53,7 +53,7 @@ C2D 2, D2C 1
 Green Path:
 C2D
 
-# Technical Summary
+## Technical Summary
 Fixed green signal duration: 3 seconds
 Maximum cars passed per cycle: 5
 Four directional paths handled
